@@ -9,6 +9,11 @@ import { HomePage } from '../HomePage';
 import { LoginPage } from '../LoginPage';
 import { RegisterPage } from '../RegisterPage';
 
+import { Header } from '../_components';
+
+
+
+
 
 class App extends React.Component {
     constructor(props) {
