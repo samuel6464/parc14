@@ -23,6 +23,7 @@ class App extends React.Component {
         const { alert } = this.props;
         return (
             <div className="jumbotron">
+                <div className="header"> Welcome to the header</div>
                 <div className="container">
                     <div className="col-sm-8 col-sm-offset-2">
                         {alert.message &&
