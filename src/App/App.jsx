@@ -4,12 +4,12 @@ import { connect } from 'react-redux';
 
 import { history } from '../_helpers';
 import { alertActions } from '../_actions';
-import { PrivateRoute } from '../_components';
+import { PrivateRoute } from '../_components/PrivateRoute';
 import { HomePage } from '../HomePage';
 import { LoginPage } from '../LoginPage';
 import { RegisterPage } from '../RegisterPage';
 
-import { Header } from '../_components';
+import { Header } from '../_components/Header';
 
 
 
@@ -27,7 +27,6 @@ class App extends React.Component {
 
     render() {
         const { alert } = this.props;
-        console.log("render it")
         return (
             <div className="jumbotron">
                 <Header />
