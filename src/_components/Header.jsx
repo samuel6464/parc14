@@ -16,10 +16,10 @@ class Header extends React.Component {
     render() {
         return (
             <div>
-                <div className="row">
-                    <div className="col-md-12">
+                <div className="">
+                    <div className="">
                         <Router>
-                            <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+                            <Navbar style={{ marginBottom: 0 }} bg="dark" variant="dark" expand="lg" sticky="top">
                                 <Navbar.Brand href="#home">
                                     <img src={logo} style={{ width: 140, marginTop: 7 }} />
                                 </Navbar.Brand>
@@ -40,7 +40,7 @@ class Header extends React.Component {
                                     </Nav>
                                 </Navbar.Collapse>
                             </Navbar>
-                            <br />
+
 
                         </Router>
                     </div>

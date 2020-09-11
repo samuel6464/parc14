@@ -13,6 +13,7 @@ module.exports = {
             },
             {
                 test: /\.css$/i,
+                
                 use: ['style-loader', 'css-loader'],
             },
             {
@@ -22,7 +23,16 @@ module.exports = {
                         loader: 'file-loader',
                     },
                 ],
+
             },
+            {
+                test: /\.(woff|woff2|eot|ttf|svg)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'url-loader?limit=1024&name=/fonts/[name].[ext]'
+                }
+            }
+
 
         ]
     },

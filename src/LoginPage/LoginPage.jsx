@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { userActions } from '../_actions';
+import { Nouvelle } from '../_components/New';
+import { Ludotheque } from '../_components/Ludotheque'
 
 class LoginPage extends React.Component {
     constructor(props) {
@@ -39,10 +41,33 @@ class LoginPage extends React.Component {
     render() {
         const { loggingIn } = this.props;
         const { username, password, submitted } = this.state;
+        const mystyle = {
+            color: "white",
+            backgroundColor: "red",
+            padding: "10px",
+            fontFamily: "Arial"
+        };
         return (
-            <div className="col-md-6 col-md-offset-3">
-                <h2>Login TEST</h2>
-                <form name="form" onSubmit={this.handleSubmit}>
+            <div>
+                <div style={mystyle} className="">
+
+                    <h2>Parc14</h2>
+                    <p>le label Parc 14 est un label musicale produisant de la musique Rock, electronique ainsi qaue des clips et des services d'enregistrement</p>
+
+                </div>
+                <Nouvelle></Nouvelle>
+                <div className='example_2'>
+                    <Ludotheque></Ludotheque>
+
+                </div>
+
+            </div>
+        );
+    }
+}
+/* formulaire d'inscription
+col-md-10 col-md-offset-1
+       <form name="form" onSubmit={this.handleSubmit}>
                     <div className={'form-group' + (submitted && !username ? ' has-error' : '')}>
                         <label htmlFor="username">Username</label>
                         <input type="text" className="form-control" name="username" value={username} onChange={this.handleChange} />
@@ -65,10 +90,7 @@ class LoginPage extends React.Component {
                         <Link to="/register" className="btn btn-link">Register</Link>
                     </div>
                 </form>
-            </div>
-        );
-    }
-}
+*/
 
 function mapState(state) {
     const { loggingIn } = state.authentication;
