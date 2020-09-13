@@ -1,0 +1,30 @@
+.swipe-div {
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.swipe-div .coverflow__container__1P-xE {
+    background: whitesmoke !important;
+}
+
+#coverflow__arrow1__2X2XF .coverflow__arrow__IDi7v:after {
+    background: black;
+}
+
+#coverflow__arrow1__2X2XF .coverflow__arrow__IDi7v.coverflow__right__1tzAF {
+
+}
+
+#coverflow__arrow1__2X2XF .coverflow__arrow__IDi7v.coverflow__left__PhMc6 {
+    left: 25px;
+    position: absolute;
+    }
+
+    #coverflow__arrow1__2X2XF .coverflow__arrow__IDi7v.coverflow__right__1tzAF {
+        position: absolute;
+        right:25px; ;
+        }

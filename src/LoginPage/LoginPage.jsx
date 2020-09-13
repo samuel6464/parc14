@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import { userActions } from '../_actions';
 import { Nouvelle } from '../_components/New';
-import { Ludotheque } from '../_components/Ludotheque'
+import { Ludotheque } from '../_components/Ludotheque';
 
 class LoginPage extends React.Component {
     constructor(props) {
@@ -56,9 +56,12 @@ class LoginPage extends React.Component {
 
                 </div>
                 <Nouvelle></Nouvelle>
-                <div className='example_2'>
-                    <Ludotheque></Ludotheque>
+                <div className="col-sm-12">
 
+                    <div className='example_2'>
+                        <Ludotheque></Ludotheque>
+
+                    </div>
                 </div>
 
             </div>

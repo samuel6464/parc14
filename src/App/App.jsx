@@ -14,6 +14,8 @@ import { RegisterPage } from '../RegisterPage';
 
 import { Header } from '../_components/Header';
 
+import { ArtistPage } from '../ArtistPage';
+
 
 
 
@@ -43,6 +45,8 @@ class App extends React.Component {
                             <Switch>
                                 <PrivateRoute exact path="/" component={HomePage} />
                                 <Route path="/login" component={LoginPage} />
+                                <Route path="/artist" component={ArtistPage} />
+
                                 <Route path="/register" component={RegisterPage} />
                                 <Redirect from="*" to="/" />
                             </Switch>
